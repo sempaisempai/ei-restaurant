@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.navbar {
+    background-color: #7b2cbf;
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 50px;
+}
+.logo span {
+    color: white;
+    font-weight: bold;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.links li {
+    transition: transform 300ms;
+}
+li:hover {
+    transform: scale(1.2);
+}
+li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li img {
+    width: 30px;
+}
+a {
+    color: white;
+}
+i {
+    padding: 5px;
+}
+.search {
+    display: flex;
+    gap: 5px;
+}
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.search label {
+    border: 1px solid #3c096c;
+    background-color: #3c096c;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.search label:hover {
+    border: 1px solid #9d4edd;
+    background-color: #9d4edd;
+    color: white;
+}
+
+.toggle-btn {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.dropdown-menu {
+    font-family: Poppins;
+    background-color: color-mix(in srgb, #7b2cbf, transparent 10%);
+    width: 100%;
+    overflow: hidden;
+    transition: height 300ms;
+    height: 0;
+    box-shadow: 0 3px 5px #bbbbbb;
+    display: none;
+}
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 300ms;
+}
+.dropdown-menu.open {
+    height: 420px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+footer i {
+    text-align: center;
+    width: 30px;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 300ms;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+.order-page {
+    font-family: Quicksand;
+    padding: 40px;
+    background-image: url('wallpaper/inazumawallpaper4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+main section {
+    padding: 20px;
+}
+main h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main h1 img {
+    width: 40px;
+}
+#electro {
+    --btn-color: #b388eb;
+    --border: #6247aa;
+}
+#electro h1 {
+    color: var(--btn-color);
+}
+#hydro {
+    --btn-color: #90e0ef;
+    --border: #00b4d8;
+}
+#hydro h1 {
+    color: var(--btn-color);
+}
+#geo {
+    --btn-color: #e7bc91;
+    --border: #bc8a5f;
+}
+#geo h1 {
+    color: var(--btn-color);
+}
+#cryo {
+    --btn-color: #9ceaef;
+    --border: #68d8d6;
+}
+#cryo h1 {
+    color: var(--btn-color);
+}
+#dendro {
+    --btn-color: #aacc00;
+    --border: #80b918;
+}
+#dendro h1 {
+    color: var(--btn-color);
+}
+#pyro {
+    --btn-color: #ffaa00;
+    --border: #ffa200;
+}
+#pyro h1 {
+    color: var(--btn-color);
+}
+#anemo {
+    --btn-color: #95d5b2;
+    --border: #74c69d;
+}
+#anemo h1 {
+    color: var(--btn-color);
+}
+
+
+
+
+main .special-dish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 10px;
+}
+.card {
+    width: 230px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    border: 2px solid var(--border);
+    background-color: var(--btn-color);
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+.card-text {
+    text-align: center;
+    padding: 10px;
+}
+.title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.dish, .price {
+    font-size: 0.7rem;
+}
+.card button {
+    padding: 8px;
+    background-color: color-mix(in srgb, var(--btn-color), white 20%);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: color 300ms;
+}
+.card button:hover {
+    color: white;
+}
+
+
+
+
+.order-form {
+    font-family: Quicksand;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+.order-form {
+    margin-top: 100px;
+}
+.order-form .elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.order-form tr {
+    background-color: var(--border);
+}
+.order-form th, .order-form td {
+    text-align: center;
+    padding: 3px 10px;
+}
+.order-form .top {
+    color: white;
+    background-color: black;
+}
+.order-form #number-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.customer-info {
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    max-width: 400px;
+    width: 100%;
+    flex-direction: column;
+}
+.customer-info .input-group {
+    position: relative;
+    --x: 15px;
+    --y: 10px;
+}
+.customer-info input {
+    border: 1px solid x;
+    width: 100%;
+    padding: var(--y) var(--x);
+}
+.customer-info label {
+    color: black;
+    position: absolute;
+    left: var(--x);
+    top: calc(var(--y) - 2px);
+    border: 1px solid transparent;
+    padding: 0 6px;
+    background-color: white;
+    transition: all 300ms;
+}
+.customer-info input:focus ~ label, .customer-info input:not(:placeholder-shown) ~ label {
+    top: calc(var(--y) * -0.7);
+    font-size: 10px;
+    color: rgb(0, 199, 0);
+}
+
+#submit {
+    font-family: Quicksand;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    background: white;
+    color: black;
+    transition: all 300ms;
+}
+#submit:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .links {
+        display: none;
+    }
+    .toggle-btn, .dropdown-menu {
+        display: block;
+    }
+    .search {
+        padding: 10px;
+    }
+    .search input {
+        width: 100%;
+    }
+}
